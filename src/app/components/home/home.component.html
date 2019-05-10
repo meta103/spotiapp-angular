@@ -1,3 +1,2 @@
-<ul>
-  <li *ngFor="let pais of paises">{{pais.name}}</li>
-</ul>
+<app-loading *ngIf="loading"></app-loading>
+<app-tarjetas *ngIf="!loading" [items]="nuevasCanciones"></app-tarjetas>
