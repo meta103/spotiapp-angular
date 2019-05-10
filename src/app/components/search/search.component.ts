@@ -18,10 +18,11 @@ export class SearchComponent {
 
     this.loading = true;
 
-    this.spotify.getArtista(termino)
+    this.spotify.getArtistas(termino)
     .subscribe((data: any) => {
       this.artistas = data;
       this.loading = false;
+      console.log(data)
     });
   }
 
